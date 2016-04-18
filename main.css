@@ -1,0 +1,33 @@
+body {
+    background-color: cornflowerblue;
+}
+
+div {
+    margin-top: 5px;
+    background-color: white;
+    padding: 8px;
+    min-height: 200px;
+    
+}
+
+input {
+    display: block;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    float: right;
+}
+
+.container {
+    max-width: 700px;
+    background-color: lightgreen;
+    padding: 8px;
+    margin: auto;
+}
+
+.floatRight {
+    float: right;
+    margin-top: -20px;
+}
