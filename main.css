@@ -3,7 +3,7 @@ body {
 }
 
 div {
-    margin-top: 5px;
+    margin: 5px 0;
     background-color: white;
     padding: 8px;
     min-height: 200px;
@@ -30,4 +30,5 @@ img {
 .floatRight {
     float: right;
     margin-top: -20px;
+    clear: both;
 }

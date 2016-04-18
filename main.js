@@ -6,16 +6,8 @@ function myfunc($scope) {
         $scope.bio = $scope.about;
         $scope.libraries = $scope.libs;
     }
-    $scope.show = true;
+    $scope.show = false;
     $scope.hide = function() {
         $scope.show = !$scope.show;
     }
 }
-
-
-// <form ng-submit="submit()" ng-controller="ExampleController">
-//   Enter text and hit enter:
-//   <input type="text" ng-model="text" name="text" />
-//   <input type="submit" id="submit" value="Submit" />
-//   <pre>list={{list}}</pre>
-// </form>

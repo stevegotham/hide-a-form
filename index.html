@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="app" ng-cloak>
     <head>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.4/angular.js"></script>
         <link rel="stylesheet" href="main.css" type="text/css" />
@@ -8,7 +8,6 @@
         
         <div class="container">
             <div ng-show="show">
-                
                 <form>
                     Username: <input ng-model="name" placeHolder="username"></input>    
                     Favorite Books: <input ng-model="favbooks" placeHolder='favorite books'></input>
@@ -17,21 +16,15 @@
                     <button ng-click='update()'>Submit</button>
                 </form>
                 <button ng-click="hide()" class='floatRight'>Hide Form</button>
-                
             </div>
             <div>   
                 <img src="https://i.vimeocdn.com/portrait/10248441_300x300.webp">
-                <!--Username:-->
                 <h1>{{ username }}</h2>
-                <!--Books:-->
                 <h2>{{ books }}</h2>
-                <!--Libraries:-->
                 <h3>{{ libraries }}</h3>
-                <!--Bio:-->
                 <p>{{ bio }}</p>
-                <button ng-show="!show" ng-click="hide()" class="floatRight">Edit</button>
+                <button  ng-show="!show" ng-click="hide()" class="floatRight">Show form</button>
             </div>
-            
         </div> 
 
         <script type="text/javascript" src="main.js"></script>
